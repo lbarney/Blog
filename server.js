@@ -16,21 +16,21 @@ app.use(express.static(__dirname + '/views'));
 
 // app.post('/blog', blogControl.create);
 // app.get('/blog', blogControl.read);
-// app.put('/blog', blogControl.update);
-// app.delete('/blog', blogControl.delete);
+// app.put('/blog/:id', blogControl.update);
+// app.delete('/blog/:id', blogControl.delete);
 // app.get('/blog/:id', blogControl.readById);
 
 // app.post('/user',userControl.create);
 // app.get('/user', userControl.read);
-// app.put('/user', userControl.update);
-// app.delete('/user', userControl.delete);
-// app.get('/user', userControl.readById);
+// app.put('/user/:id', userControl.update);
+// app.delete('/user/:id', userControl.delete);
+// app.get('/user/:id', userControl.readById);
 
 // app.post('/projects', projectsControl.create);
 // app.get('/projects', projectsControl.read);
-// app.put('/projects', projectsConrtol.update);
-// app.delete('/projects', projectsControl.delete);
-// app.get('/projects', projectsControl.readById);
+// app.put('/projects/:id', projectsConrtol.update);
+// app.delete('/projects/:id', projectsControl.delete);
+// app.get('/projects/:id', projectsControl.readById);
 
 
 
