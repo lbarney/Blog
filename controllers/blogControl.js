@@ -15,12 +15,12 @@ module.exports = {
 	read: function(req, res, next){
 		BlogModel
 		.find()
-		//.populate('comments') //comments.user?
+		.populate('comments.user') //comments.user?
 		.exec(function(err, result){
 			if(err){
 				res.send(err);
 			}else{
-				res.send(result)
+				res.send(result);
 			}
 		});
 	},
@@ -29,7 +29,7 @@ module.exports = {
 			if(err){
 				res.send(err);
 			}else{
-				res.send(result)
+				res.send(result);
 			}
 		});
 	},
@@ -38,7 +38,7 @@ module.exports = {
 			if(err){
 				res.send(err);
 			}else{
-				res.send(result)
+				res.send(result);
 			}
 		});
 	},
@@ -48,7 +48,7 @@ module.exports = {
 			if(err){
 				res.send(err);
 			}else{
-				res.send(result)
+				res.send(result);
 			}
 		});
 	}

@@ -7,14 +7,14 @@ var IndexRoute = ReactRouter.IndexRoute;
 var hashHistory = ReactRouter.hashHistory;
 
 var Main = require('./../main');
-var About = require('./../about');
+//var About = require('./../about');
 var Home = require('./../home');
 var Blog = require('./../blogapp');
-var Contact = require('./../contact');
-var Project = require('./../projects');
+//var Contact = require('./../contact');
+//var Project = require('./../projects');
 
 
-ReactDom.render(
+ReactDOM.render(
 		<Router history = {hashHistory}>
 			<Route path = '/' component = {Main}>
 				<IndexRoute component = {Home}/>

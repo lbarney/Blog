@@ -19,7 +19,16 @@ module.exports = {
 			if(err){
 				res.send(err);
 			}else{
-				res.send(result)
+				res.send(result);
+			}
+		});
+	},
+	update: function(req, res, next){
+		UserModel.findByIdAndUpdate(req.params.id, req.body, function(err, result){
+			if(err){
+				res.send(err);
+			}else{
+				res.send(result);
 			}
 		});
 	},
@@ -28,7 +37,7 @@ module.exports = {
 			if(err){
 				res.send(err);
 			}else{
-				res.send(result)
+				res.send(result);
 		}
 		});
 	},
@@ -38,7 +47,7 @@ module.exports = {
 			if(err){
 				res.send(err);
 			}else{
-				res.send(result)
+				res.send(result);
 			}
 		});
 	}
