@@ -12,14 +12,15 @@ app.use(express.static(__dirname + '/views'));
 
 // var userControl = require('./controllers/userControl.js');
 // var projectsControl = require('./controllers/projectsControl.js');
-// var blogControl = require('./controllers/blogControl');
+ var blogControl = require('./controllers/blogControl');
+ 
 
-// app.post('/blog', blogControl.create);
-// app.get('/blog', blogControl.read);
-// app.put('/blog/:id', blogControl.update);
-// app.delete('/blog/:id', blogControl.delete);
-// app.get('/blog/:id', blogControl.readById);
-
+ app.post('/blog', blogControl.create);
+ app.get('/blog', blogControl.read);
+ app.put('/blog/:id', blogControl.update);
+ app.delete('/blog/:id', blogControl.delete);
+ app.get('/blog/:id', blogControl.readById);
+ 
 // app.post('/user',userControl.create);
 // app.get('/user', userControl.read);
 // app.put('/user/:id', userControl.update);
