@@ -5,24 +5,26 @@ var Main = React.createClass({
 	render: function(){
 		return(
 		<div>
-			<div>
-				<div className = 'navigation'>
-				<Link to = '/'>
-					<button className = 'btn '>Home</button>
-				</Link>
-				<Link to='/blog'>
-					<button className = 'btn'>Blog</button>
-				</Link>
-				<Link to = '/about'>
-					<button className = 'btn'>About</button>
-				</Link>
-				<Link to = '/contact'>
-					<button className = 'btn'>Contact</button>
-				</Link>
-				</div>
-				<div id = 'box'></div>
-					<div className = 'container jumbotron back'>
-						<h1 className = 'theTitle'>Lance Barney</h1>
+			<div >
+				<nav className = 'navbar navbar-fixed-top container-fluid'>
+					<div className = 'container-fluid'>
+						<Link to = '/'>
+							<button className  = 'btn navbar-btn '>Home</button>
+						</Link>
+						<Link to='/blog'>
+							<button className = 'btn navbar-btn'>Blog</button>
+						</Link>
+						<Link to = '/about'>
+							<button className = 'btn navbar-btn'>About</button>
+						</Link>
+						<Link to = '/contact'>
+							<button className = 'btn navbar-btn'>Contact</button>
+						</Link>
+					</div>
+				</nav>
+				
+					<div className = 'container-fluid jumbotron back '>
+						<h1 className = 'theTitle '>Lance Barney</h1>
 						
 					</div>
 					{this.props.children}

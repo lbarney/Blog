@@ -1,3 +1,14 @@
 /* #blog #about #contact  .navigation  */
 
 
+body {
+	padding-top: 70px;
+}
+.back {
+	background-color: #050505;
+}
+.jumbotron .theTitle {
+
+color: #AAAAAA;
+
+}
