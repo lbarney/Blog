@@ -9,17 +9,15 @@ var React = require('react');
 
 
 var BlogPost = React.createClass({
-	render: function(){
+	render:function(){
 		return(
 			<div>
 				<div className = 'well col-md-10'>
-					<h3>Author: {this.props.author} </h3>
-					<h4>Date:{this.props.date}</h4>
+					<h4>Author: {this.props.author} </h4>
+					<h5>Date: {this.props.date}</h5>
 					<p>{this.props.body}</p>
-					<div>
-						<p>{this.props.comments}</p>
-					</div>
 				</div>
+				
 			</div>
 			)
 	}

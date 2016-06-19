@@ -12,7 +12,7 @@
 	var AllPostsData = React.createClass({
 		getInitialState: function(){
 			return {
-				Posts : []
+				blog : []
 			}
 		},
 		deletePostFromServer: function(id){
@@ -34,7 +34,7 @@
 				url: '/blog'
 			}).then(function(data){
 				console.log(data);
-				self.setState({posts: data})
+				self.setState({blog: data})
 			})
 		},
 		componentDidMount: function(){
