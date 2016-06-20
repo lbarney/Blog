@@ -3,11 +3,17 @@
 		//AllPosts
 			//BlogPost
 	//Toggle
+	//BlogPostData
+	//BlogPostForm
+	//EditBlogData
+		//EditBlogForm
 
 
 var React = require('react');
-var AllPostsData = require('./allPostsData.js')
+var AllPostsData = require('./allPostsData.js');
 var Toggle = require('./toggle.js');
+var BlogPostData = require('./blogPostData.js');
+var EditBlogData = require('./editBlogData.js');
 
 
 var BlogApp = React.createClass({
@@ -18,8 +24,8 @@ var BlogApp = React.createClass({
 		}
 	},
 	getId: function(component, id){
-		if(component === 'editOnePost'){
-			return this.setState({activePostId: id, activeComponent: 'editPost'})
+		if(component === 'editOneBlog'){
+			return this.setState({activeBlogId: id, activeComponent: 'editBlog'})
 		}else{
 			return null;
 		}
@@ -28,23 +34,24 @@ var BlogApp = React.createClass({
 	showComponent: function(){
 		if(this.state.activeComponent === 'allPosts'){
 			return <AllPostsData getId = {this.getId}/>
-		}else if(this.state.activeComponent === 'postForm'){
-			return<AllPostsData toggleActiveComponent={this.toggleActiveComponent}/>
-		}else if(this.state.activeComponent === 'editPost'){
-			return <EditPostData id = {this.state.activePostId} toggleActiveComponent = {this.toggleActiveComponent}/>
+		}else if(this.state.activeComponent === 'blogPostForm'){
+			return<BlogPostData toggleActiveComponent = {this.toggleActiveComponent}/>
+		}else if(this.state.activeComponent === 'editBlog'){
+			return <EditBlogData id = {this.state.activePostId} toggleActiveComponent = {this.toggleActiveComponent}/>
 		}else{
 			throw new Error('No Active Component',this.state.activeComponent)
 		}
 	},
 
 	toggleActiveComponent: function(name){
-		this.setState({activeComponent: name})
+		this.setState({activeComponent : name})
 	},
 
 
 	render: function(){
 		return(
 			<div id = 'blog'>
+			
 				<Toggle toggleActiveComponent={this.toggleActiveComponent}/>
 				{this.showComponent()}
 			</div>

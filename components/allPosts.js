@@ -3,6 +3,8 @@
 		//AllPosts
 			//BlogPost
 	//Toggle
+	//BlogPostData
+		//BlogPostForm
 
 
 
@@ -17,9 +19,9 @@ function AllPosts(props){
 						body = {item.body}
 						comments = {item.comments}
 						hidden = {item.hidden}
-						key = {item.id}
-						id = {item.id}
-						deletePostFromServer = {props.deletePostFromServer}
+						key = {item._id}
+						id = {item._id}
+						deleteBlogFromServer = {props.deleteBlogFromServer}
 						getId = {props.getId}/>
 	});
 

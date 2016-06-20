@@ -3,6 +3,8 @@
 		//AllPosts
 			//BlogPost
 	//Toggle
+	//BlogPostData
+		//BlogPostForm
 
 
 	var React = require('react');
@@ -15,7 +17,7 @@
 				blog : []
 			}
 		},
-		deletePostFromServer: function(id){
+		deleteBlogFromServer: function(id){
 			var self = this;
 			$.ajax({
 				method: 'DELETE',
@@ -41,7 +43,7 @@
 			this.getAllPostsFromServer();
 		},
 		render: function(){
-			return this.state.blog ? <AllPosts getId = {this.props.getId} deletePostFromServer = {this.deletePostFromServer} blog = {this.state.blog}/> : null;
+			return this.state.blog ? <AllPosts getId = {this.props.getId} deleteBlogFromServer = {this.deleteBlogFromServer} blog = {this.state.blog}/> : null;
 		}
 		
 	});

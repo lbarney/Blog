@@ -3,8 +3,8 @@ var BlogModel = require('./../models/BlogModel.js');
 
 module.exports = {
 	create: function(req, res, next){
-		var post = new BlogModel(req.body);
-		post.save(function(err, result){
+		var blog = new BlogModel(req.body);
+		blog.save(function(err, result){
 			if(err){
 				res.send(err);
 			}else{

@@ -22,6 +22,7 @@ ReactDOM.render(
 				<Route path = '/projects' component = {Projects}/>
 				<Route path = '/contact' component = {Contact}/>
 				<Route path = '/about' component = {About}/>
+				
 			</Route>
 		</Router>,
 
