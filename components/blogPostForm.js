@@ -14,20 +14,21 @@ var BlogPostForm = React.createClass({
 			
 			<div>
 
-				<div className = 'container'>
-					<form className = 'form-inline' onSubmit = {this.props.handleBlogSubmit}>
+				<div className = 'container container-fluid'>
+					<form className = 'form' onSubmit = {this.props.handleBlogSubmit}>
 						<div className = 'form-group'>
 							<label>Body</label>
-							<input type = 'text' className = 'form-control' placeholder = 'Body'
+							<input type = 'text' className = 'form-control ' placeholder = 'Body'
 							onChange = {this.props.handleBodyChange}
 							value = {this.props.body}/>
 						</div>
 						<div className = 'form-group'>
 							<label>Image Url</label>
-							<input type = 'text' className = 'form-control' placeholder = 'Image Url'
+							<input type = 'text' className = 'form-control ' placeholder = 'Image Url'
 							onChange = {this.props.handleImageUrlChange}
-							value = {this.props.imageUrl}/>
+							value = {this.props.imageurl}/>
 						</div>
+						
 						<button type = 'submit' className = 'btn btn-primary'>Publish Blog</button>	
 					</form>	
 				</div>

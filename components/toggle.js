@@ -13,10 +13,13 @@
 		render: function(){
 			return(
 				<div>
+					<div>
 					
-						<button className = 'btn btn-default'onClick = {this.props.toggleActiveComponent.bind(null,'allPosts')}> Get all blog posts</button>
-						<button className = 'btn btn-warning'onClick = {this.props.toggleActiveComponent.bind(null,'blogPostForm')}>Post to the Blog</button>
-					
+					<div>
+						<button className = 'btn btn-xs btn-default btn-block 'onClick = {this.props.toggleActiveComponent.bind(null,'allPosts')}>blog posts</button>
+						<button className = 'btn btn-default btn-xs btn-block 'onClick = {this.props.toggleActiveComponent.bind(null,'blogPostForm')}>Post to the Blog</button>
+					</div>
+					</div>
 				</div>
 				)
 		}

@@ -12,3 +12,11 @@ body {
 color: #AAAAAA;
 
 }
+#spacer {
+	height: 100px;
+}
+img {
+	max-width: 600px;
+	max-height: 600px;
+	margin: auto;
+}

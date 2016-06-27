@@ -85,6 +85,7 @@ var EditBlogData = React.createClass({
 	render: function(){
 		return (
 			<div>
+				<div>
 			<EditBlogForm
 			author = {this.state.author}
 			date = {this.state.date}
@@ -92,6 +93,7 @@ var EditBlogData = React.createClass({
 			comments = {this.state.comments}
 			imageUrl = {this.state.imageUrl}
 			hidden = {this.state.hidden}/>
+				</div>
 			</div>
 			);
 	}

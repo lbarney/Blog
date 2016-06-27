@@ -12,6 +12,7 @@ var Home = require('./../home');
 var Blog = require('./../blogapp');
 var Contact = require('./../contact');
 var Projects = require('./../projects');
+var LogIn = require('./../login');
 
 
 ReactDOM.render(
@@ -22,6 +23,7 @@ ReactDOM.render(
 				<Route path = '/projects' component = {Projects}/>
 				<Route path = '/contact' component = {Contact}/>
 				<Route path = '/about' component = {About}/>
+				<Route path = '/login' component = {LogIn}/>
 				
 			</Route>
 		</Router>,

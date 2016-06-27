@@ -74,7 +74,7 @@ var BlogPostData = React.createClass({
 			return(
 					<div>
 						<div>
-						<h1>blogPostData</h1>
+						<h3>Publish Blogs Here</h3>
 						<BlogPostForm handleBlogSubmit = {this.handleBlogSubmit}
 									  handleAuthorChange = {this.handleAuthorChange}
 									  handleDateChange = {this.handleDateChange}
